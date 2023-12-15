@@ -1,0 +1,17 @@
+//commmentik/////))
+PROGRAMM;//тута прога///
+  integer x;//инт иксик
+  bool y;
+  string z;//commmment:-)9-=
+  z="wwww";
+  WHILE 1 DO
+    x=x-1;
+    if x==5 then y=(valstr(z) > 15);
+      EXITWHILE;
+    else y=(valstr(z) < 15); 
+    endif;
+  ENDWHILE;
+  FUNC valstr (string s);
+    return(len(s));
+  ENDF;
+END.^
