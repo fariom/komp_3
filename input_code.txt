@@ -1,6 +1,6 @@
 //commmentik/////))
 PROGRAMM;//тута прога///
-  integer x;//инт иксик
+  integer x;//инт иксикк
   bool y;
   string z;//commmment:-)9-=
   z="wwww";

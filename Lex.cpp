@@ -12,7 +12,7 @@ lex_tables LexAnalysis() {
 	lex_tables lexTable;
 	lexTable.error = false;
 	if (!inputFile) {
-		cerr << "Íå óäàëîñü îòêðûòü ôàéë." << endl;
+		cerr << "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»" << endl;
 		lexTable.error = true;
 		return lexTable;
 	}
@@ -83,7 +83,7 @@ lex_tables LexAnalysis() {
 			proga.pop_back();
 		}
 
-		//òóò äîëæíà áûòü äîáàâëåíèå ïðîáåëîâ
+		//Ñ‚ÑƒÑ‚ Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð±ÐµÐ»Ð¾Ð²
 	}
 	string buf;
 	for (int k = 0; k < proga.size(); k++) {
