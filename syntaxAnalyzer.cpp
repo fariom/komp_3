@@ -2,14 +2,16 @@
 
 /*
 len работает как оператор, выдающий символьную длину string объекта в integer
+[ ] скобки для группировки терминальных/нетерминальных символов
+* рядом с нетерминальном, значит 0 или более раз
 
 S             ::= PROGRAMM ; <declaration>* <statement>* <function> END .
 declaration   ::= <type> <id> ;
 statement     ::= [ <assignment> | <loop> | <ifelse> | EXITWHILE ] ;
 assignment    ::= <identifier> = [ <expression> | ( <condition> ) ] ;
 loop          ::= WHILE <condition> DO <statement> ENDWHILE ;
-function      ::=  FUNC <identifiers> ( <declaration> ) ; <statement>* <return> ENDF ;
-return        ::= return ( [ <id> | <len> ] ) ;
+function      ::= FUNC <identifiers> ( <declaration> ) ; <statement>* <return> ENDF ;
+return        ::= return ( <len> ) ;
 function_call ::= <identifier> ( <identifier> )
 ifelse        ::= if <condition> then <statement>* <else_block> endif ;
 else_block    ::= else <statement> | ε
